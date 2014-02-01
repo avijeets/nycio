@@ -15,7 +15,7 @@ gem "twitter-bootstrap-rails"
 gem 'bootstrap-sass', '~> 3.1.0'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'friendly_id'
-gem 'acts-as-taggable-on', '~> 2.4.1'
+gem 'acts-as-taggable-on'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

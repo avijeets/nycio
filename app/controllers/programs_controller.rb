@@ -69,6 +69,6 @@ class ProgramsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def program_params
-      params.require(:program).permit(:name, :description, :seeking_volunteers, :monthly_volunteer_hour_commitment, :parent_contact_name, :parent_contact_email, :parent_contact_phone, :volunteer_contact_name, :volunteer_contact_email, :volunteer_contact_phone, :school_contact_name, :school_contact_email, :school_contact_phone, :organization_id)
+      params.require(:program).permit(:name, :description, :seeking_volunteers, :monthly_volunteer_hour_commitment, :parent_contact_name, :parent_contact_email, :parent_contact_phone, :volunteer_contact_name, :volunteer_contact_email, :volunteer_contact_phone, :school_contact_name, :school_contact_email, :school_contact_phone, :organization_id, :gender_served_list, :min_age_served_list, :max_age_served_list, :program_format_list)
     end
 end

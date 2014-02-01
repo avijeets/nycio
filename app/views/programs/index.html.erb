@@ -17,6 +17,7 @@
       <th>School contact email</th>
       <th>School contact phone</th>
       <th>Organization</th>
+      <th>Gender served</th>
       <th></th>
       <th></th>
       <th></th>
@@ -40,6 +41,7 @@
         <td><%= program.school_contact_email %></td>
         <td><%= program.school_contact_phone %></td>
         <td><%= program.organization_id %></td>
+        <td><%= program.gender_served_list %></td>
         <td><%= link_to 'Show', program %></td>
         <td><%= link_to 'Edit', edit_program_path(program) %></td>
         <td><%= link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' } %></td>
