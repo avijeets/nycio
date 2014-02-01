@@ -16,14 +16,6 @@ GIT
       ransack (~> 1.0)
       sass-rails
 
-GIT
-  remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
-  revision: 9c6c07f74ff515cf38380b014cfede14a4f0eae4
-  branch: 3
-  specs:
-    bootstrap-sass (3.0.0.0)
-      sass (~> 3.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -59,6 +51,8 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    bootstrap-sass (3.1.0.0)
+      sass (~> 3.2)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -200,7 +194,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   acts-as-taggable-on (~> 2.4.1)
-  bootstrap-sass!
+  bootstrap-sass (~> 3.1.0)
   coffee-rails (~> 4.0.0)
   friendly_id
   heroku
