@@ -14,6 +14,7 @@ class CreatePrograms < ActiveRecord::Migration
       t.string :school_contact_name
       t.string :school_contact_email
       t.string :school_contact_phone
+      t.integer :organization_id
 
       t.timestamps
     end

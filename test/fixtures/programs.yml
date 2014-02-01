@@ -14,6 +14,7 @@ one:
   school_contact_name: MyString
   school_contact_email: MyString
   school_contact_phone: MyString
+  organization_id: 1
 
 two:
   name: MyString
@@ -29,3 +30,4 @@ two:
   school_contact_name: MyString
   school_contact_email: MyString
   school_contact_phone: MyString
+  organization_id: 1

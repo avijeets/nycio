@@ -18,7 +18,7 @@ class ProgramsControllerTest < ActionController::TestCase
 
   test "should create program" do
     assert_difference('Program.count') do
-      post :create, program: { description: @program.description, monthly_volunteer_hour_commitment: @program.monthly_volunteer_hour_commitment, name: @program.name, parent_contact_email: @program.parent_contact_email, parent_contact_name: @program.parent_contact_name, parent_contact_phone: @program.parent_contact_phone, school_contact_email: @program.school_contact_email, school_contact_name: @program.school_contact_name, school_contact_phone: @program.school_contact_phone, seeking_volunteers: @program.seeking_volunteers, volunteer_contact_email: @program.volunteer_contact_email, volunteer_contact_name: @program.volunteer_contact_name, volunteer_contact_phone: @program.volunteer_contact_phone }
+      post :create, program: { description: @program.description, monthly_volunteer_hour_commitment: @program.monthly_volunteer_hour_commitment, name: @program.name, organization_id: @program.organization_id, parent_contact_email: @program.parent_contact_email, parent_contact_name: @program.parent_contact_name, parent_contact_phone: @program.parent_contact_phone, school_contact_email: @program.school_contact_email, school_contact_name: @program.school_contact_name, school_contact_phone: @program.school_contact_phone, seeking_volunteers: @program.seeking_volunteers, volunteer_contact_email: @program.volunteer_contact_email, volunteer_contact_name: @program.volunteer_contact_name, volunteer_contact_phone: @program.volunteer_contact_phone }
     end
 
     assert_redirected_to program_path(assigns(:program))
@@ -35,7 +35,7 @@ class ProgramsControllerTest < ActionController::TestCase
   end
 
   test "should update program" do
-    patch :update, id: @program, program: { description: @program.description, monthly_volunteer_hour_commitment: @program.monthly_volunteer_hour_commitment, name: @program.name, parent_contact_email: @program.parent_contact_email, parent_contact_name: @program.parent_contact_name, parent_contact_phone: @program.parent_contact_phone, school_contact_email: @program.school_contact_email, school_contact_name: @program.school_contact_name, school_contact_phone: @program.school_contact_phone, seeking_volunteers: @program.seeking_volunteers, volunteer_contact_email: @program.volunteer_contact_email, volunteer_contact_name: @program.volunteer_contact_name, volunteer_contact_phone: @program.volunteer_contact_phone }
+    patch :update, id: @program, program: { description: @program.description, monthly_volunteer_hour_commitment: @program.monthly_volunteer_hour_commitment, name: @program.name, organization_id: @program.organization_id, parent_contact_email: @program.parent_contact_email, parent_contact_name: @program.parent_contact_name, parent_contact_phone: @program.parent_contact_phone, school_contact_email: @program.school_contact_email, school_contact_name: @program.school_contact_name, school_contact_phone: @program.school_contact_phone, seeking_volunteers: @program.seeking_volunteers, volunteer_contact_email: @program.volunteer_contact_email, volunteer_contact_name: @program.volunteer_contact_name, volunteer_contact_phone: @program.volunteer_contact_phone }
     assert_redirected_to program_path(assigns(:program))
   end
 

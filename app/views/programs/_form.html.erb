@@ -28,10 +28,6 @@
     <%= f.number_field :monthly_volunteer_hour_commitment %>
   </div>
   <div class="field">
-    <%= f.label :organization_id %><br>
-    <%= f.number_field :organization_id %>
-  </div>
-  <div class="field">
     <%= f.label :parent_contact_name %><br>
     <%= f.text_field :parent_contact_name %>
   </div>
@@ -66,6 +62,10 @@
   <div class="field">
     <%= f.label :school_contact_phone %><br>
     <%= f.text_field :school_contact_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :organization_id %><br>
+    <%= f.number_field :organization_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
