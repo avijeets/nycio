@@ -1,0 +1,51 @@
+<h1>Listing programs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Seeking volunteers</th>
+      <th>Monthly volunteer hour commitment</th>
+      <th>Parent contact name</th>
+      <th>Parent contact email</th>
+      <th>Parent contact phone</th>
+      <th>Volunteer contact name</th>
+      <th>Volunteer contact email</th>
+      <th>Volunteer contact phone</th>
+      <th>School contact name</th>
+      <th>School contact email</th>
+      <th>School contact phone</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @programs.each do |program| %>
+      <tr>
+        <td><%= program.name %></td>
+        <td><%= program.description %></td>
+        <td><%= program.seeking_volunteers %></td>
+        <td><%= program.monthly_volunteer_hour_commitment %></td>
+        <td><%= program.parent_contact_name %></td>
+        <td><%= program.parent_contact_email %></td>
+        <td><%= program.parent_contact_phone %></td>
+        <td><%= program.volunteer_contact_name %></td>
+        <td><%= program.volunteer_contact_email %></td>
+        <td><%= program.volunteer_contact_phone %></td>
+        <td><%= program.school_contact_name %></td>
+        <td><%= program.school_contact_email %></td>
+        <td><%= program.school_contact_phone %></td>
+        <td><%= link_to 'Show', program %></td>
+        <td><%= link_to 'Edit', edit_program_path(program) %></td>
+        <td><%= link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Program', new_program_path %>

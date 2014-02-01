@@ -1,4 +1,6 @@
 Nycio::Application.routes.draw do
+  resources :programs
+
   resources :organizations
 
   # The priority is based upon order of creation: first created -> highest priority.

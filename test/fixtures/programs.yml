@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  seeking_volunteers: false
+  monthly_volunteer_hour_commitment: 1
+  parent_contact_name: MyString
+  parent_contact_email: MyString
+  parent_contact_phone: MyString
+  volunteer_contact_name: MyString
+  volunteer_contact_email: MyString
+  volunteer_contact_phone: MyString
+  school_contact_name: MyString
+  school_contact_email: MyString
+  school_contact_phone: MyString
+
+two:
+  name: MyString
+  description: MyString
+  seeking_volunteers: false
+  monthly_volunteer_hour_commitment: 1
+  parent_contact_name: MyString
+  parent_contact_email: MyString
+  parent_contact_phone: MyString
+  volunteer_contact_name: MyString
+  volunteer_contact_email: MyString
+  volunteer_contact_phone: MyString
+  school_contact_name: MyString
+  school_contact_email: MyString
+  school_contact_phone: MyString
