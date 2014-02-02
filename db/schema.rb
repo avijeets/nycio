@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20140202184249) do
 
   create_table "programs", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.boolean  "seeking_volunteers"
     t.integer  "monthly_volunteer_hour_commitment"
     t.string   "parent_contact_name"
